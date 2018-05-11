@@ -29,8 +29,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UITabBarControllerDelegate
         self.window?.rootViewController = mainTabBarVc
         self.window?.makeKeyAndVisible()
         
-        
+        //tabbar背景色
         UITabBar.appearance().backgroundColor = UIColor.white
+        //tabbar字体颜色
+        UITabBar.appearance().tintColor = UIColor(r: 255, g: 102, b: 0)
         
         return true
     }

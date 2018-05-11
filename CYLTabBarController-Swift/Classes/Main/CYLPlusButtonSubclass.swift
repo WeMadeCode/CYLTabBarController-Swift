@@ -23,7 +23,7 @@ class CYLPlusButtonSubclass: CYLPlusButton,CYLPlusButtonSubclassing {
         button.setTitleColor(UIColor.gray, for: .normal)
         
         button.setTitle("选中", for: .selected)
-        button.setTitleColor(UIColor.blue, for: .selected)
+        button.setTitleColor(UIColor(r: 255, g: 102, b: 0), for: .selected)
         
         button.adjustsImageWhenHighlighted = false
         button.sizeToFit()
