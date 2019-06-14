@@ -23,9 +23,9 @@ class MainTabBarController: CYLTabBarController {
     
 }
 
-extension MainTabBarController:UITabBarControllerDelegate{
+extension MainTabBarController{
     
-    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+    override func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         self.updateSelectionStatusIfNeeded(for: tabBarController, shouldSelect: viewController)
         return true
     }

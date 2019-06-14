@@ -1,21 +1,68 @@
-# CYLTabBarController【低耦合集成TabBarController】
+![enter image description here](http://i68.tinypic.com/ifyhoo.jpg)
 
+# [CN]CYLTabBarController【一行代码实现 Lottie 动画 TabBar】
+# [EN]CYLTabBarController [An animated tabBar supported by Lottie with one line of code] 
 
 
 <p align="center">
-<a href=""><img src="https://img.shields.io/badge/pod-v1.17.4-brightgreen.svg"></a>
+<a href="https://github.com/ChenYilong/CYLTabBarController/blob/master/CYLTabBarController.podspec"><img src="https://img.shields.io/badge/Pod-GetLatestVersion-green.svg?style=flat"></a>
 <a href=""><img src="https://img.shields.io/badge/Swift-compatible-orange.svg"></a>
-<a href=""><img src="https://img.shields.io/badge/platform-iOS%207.0%2B-ff69b5152950834.svg"></a>
+<a href=""><img src="https://img.shields.io/badge/platform-iOS%208.0%2B-ff69b5152950834.svg"></a>
 <a href="https://github.com/ChenYilong/CYLTabBarController/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg?style=flat"></a>
+
 </p>
+
+
+<p align="center">
+<a href="https://github.com/ChenYilong/iOSBlog/issues/21"><img src="https://img.shields.io/static/v1.svg?label=QQ%E3%80%81Telegram%20Group&color=blue&message=%E7%82%B9%E5%87%BB%E8%8E%B7%E5%8F%96QQ%E3%80%81Telegram%E7%BE%A4%E4%BF%A1%E6%81%AF&color=green"></a>
+</p>
+
+<p align="center">
+<a href="https://github.com/ChenYilong/CYLTabBarController/releases.atom"><img src="https://img.shields.io/badge/RSS feed (full text feed)-订阅仓库版本更新-yellow.svg"></a>
+</p>
+
+<p align="center">
+<a href="https://github.com/ChenYilong/iOSBlog/releases.atom"><img src="https://img.shields.io/badge/RSS feed (full text feed)-订阅我的博客更新-yellow.svg"></a>
+</p>
+
 <p align="center">
 <a href="https://twitter.com/stevechen1010"><img src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social&maxAge=2592000"></a>
 <a href="http://weibo.com/luohanchenyilong"><img src="http://i67.tinypic.com/wbulbr.jpg"></a>
-<a href="https://gitter.im/ChenYilong/CYLTabBarController?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge"><img src="https://badges.gitter.im/ChenYilong/CYLTabBarController.svg"></a>
+</a><a href="https://t.me/CYLTabBarController"><img src="http://i66.tinypic.com/of2hbn.jpg"></a></a> 
 </p>
 
+## [CN]阅读须知 
+## [EN]Before Reading 
 
-## 导航
+ - [CN] mark means Chinese language by default.
+ - [EN] mark means English language.
+ - [CN] [点此获取 QQ 群,Telegram 群交流信息]( https://github.com/ChenYilong/iOSBlog/issues/21) 。
+ - [EN]Telegram Group to communicate the features or bugs: https://t.me/CYLTabBarController 
+
+
+# [CN]谁在用?上架APP列表[EN]who are using?List  of App published 
+
+
+
+
+APP name link icon | image  |APP name link icon | image  
+:-------------:|:-------------:|:-------------:|:-------------:
+海底捞  [App Store Link](https://itunes.apple.com/cn/app/%E6%B5%B7%E5%BA%95%E6%8D%9E/id553115181?l=en&mt=8)  ![enter image description here](https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/3f/8c/b2/3f8cb27c-8a47-82b2-fa08-25ca075cee59/AppIcon-1x_U007emarketing-85-220-0-9.png/690x0w.jpg) |  ![enter image description here](https://is5-ssl.mzstatic.com/image/thumb/Purple128/v4/20/78/c4/2078c481-aa68-c263-ee3b-22b797ec2209/pr_source.jpg/690x0w.jpg) | C家 [App Store Link](https://itunes.apple.com/cn/app/c%E5%AE%B6/id1123394197?l=en&mt=8) ![enter image description here](https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/cf/9c/35/cf9c35c2-68fa-8d3a-e612-e2560501899b/AppIcon-0-1x_U007emarketing-0-0-85-220-0-5.png/690x0w.jpg) | Lottie 效果  ![](http://ww3.sinaimg.cn/large/006tNc79ly1g3aavtlekdg30ai0l2b2b.gif) | 
+淘必中-淘宝推出的一款具有营销购物功能的APP [App Store Link](https://itunes.apple.com/cn/app/%E6%B7%98%E5%BF%85%E4%B8%AD/id399737960?l=en&mt=8) ![enter image description here](https://is2-ssl.mzstatic.com/image/thumb/Purple125/v4/f2/8d/58/f28d5806-bf9d-b77b-4e41-5986d96d250b/AppIcon-1x_U007emarketing-85-220-4.png/690x0w.jpg ) | ![enter image description here](https://is4-ssl.mzstatic.com/image/thumb/Purple125/v4/67/04/be/6704be9c-de16-fcdd-0376-7bf66a3e3f82/pr_source.png/690x0w.png) | 慧诊健康  [App Store Link](https://itunes.apple.com/cn/app/%E6%85%A7%E8%AF%8A%E5%81%A5%E5%BA%B7/id1434271846?mt=8) ![enter image description here](https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/b4/ae/d3/b4aed30e-996e-2fcc-0234-ebff091c861d/AppIcon-0-1x_U007emarketing-0-0-85-220-0-10.png/690x0w.jpg)|![enter image description here](https://is3-ssl.mzstatic.com/image/thumb/Purple118/v4/6d/f3/33/6df33378-da60-45b3-1c2a-9d286f12ce55/mzl.vgjiebgy.png/690x0w.jpg)
+究竟大学 [App Store Link](https://itunes.apple.com/us/app/%E7%A9%B6%E7%AB%9F%E5%A4%A7%E5%AD%A6/id1334531245?mt=8)  ![enter image description here](https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/d8/4a/95/d84a9596-3d02-881e-7646-e90954ffa8bc/AppIcon-0-1x_U007emarketing-0-0-85-220-6.png/690x0w.jpg) | ![enter image description here](https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/ca/4f/f4/ca4ff420-ec42-cc9d-7c8f-d7df388a184d/pr_source.png/690x0w.jpg) | 蕉片 - 短视频拍摄剪辑出电影大片   [App Store Link](https://itunes.apple.com/us/app/%E8%95%89%E7%89%87-%E7%9F%AD%E8%A7%86%E9%A2%91%E6%8B%8D%E6%91%84%E5%89%AA%E8%BE%91%E5%87%BA%E7%94%B5%E5%BD%B1%E5%A4%A7%E7%89%87/id1235972800?mt=8)  ![enter image description here](https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/2c/14/68/2c1468de-5807-253d-baa4-54cd4b43d7a3/AppIcon-1x_U007emarketing-85-220-4.png/230x0w.jpg)|![](http://ww1.sinaimg.cn/large/006tNc79ly1g3aaq6rnekj30j615hq5m.jpg)
+闪剧 - 可以玩的短视频 [App Store Link](https://itunes.apple.com/us/app/%E9%97%AA%E5%89%A7-%E5%8F%AF%E4%BB%A5%E7%8E%A9%E7%9A%84%E7%9F%AD%E8%A7%86%E9%A2%91/id1360997439?mt=8) ![enter image description here](https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/e6/26/e0/e626e01e-b00d-c36c-fa3c-98c59e5b95b1/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-7.png/690x0w.jpg)| ![enter image description here](https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/23/70/57/23705710-9ee4-f7f0-9763-1ad2e5cb7cf6/pr_source.jpg/690x0w.jpg) | 土狗云商城 [App Store Link](https://itunes.apple.com/cn/app/%E5%9C%9F%E7%8B%97%E4%BC%98%E4%BA%AB/id1239005385?mt=8)  ![enter image description here](https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/1c/06/93/1c0693ef-db45-de8c-5b39-1b966d58c930/AppIcon-0-1x_U007emarketing-0-0-85-220-0-7.png/690x0w.jpg)|![](http://ww4.sinaimg.cn/large/006tNc79ly1g3aaqwf078j30u01sxx6r.jpg)
+Analyst.ai [App Store Link](https://itunes.apple.com/us/app/analyst-ai/id1345754742?mt=8) ![enter image description here](https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/33/89/1d/33891d65-022e-88a3-b495-7fea6fe77a32/AppIcon-0-1x_U007emarketing-0-0-85-220-0-5.png/690x0w.jpg)| ![enter image description here](https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/35/33/77/35337725-e80d-7b4c-6422-0cac61039917/pr_source.png/690x0w.jpg) | 美膳校园  [App Store Link](https://itunes.apple.com/us/app/%E7%BE%8E%E8%86%B3%E6%A0%A1%E5%9B%AD/id1447211131?mt=8)  ![enter image description here](https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/de/f7/be/def7be95-abc6-df2e-78c5-8318eae418be/AppIcon-0-1x_U007emarketing-0-0-85-220-0-2.png/690x0w.jpg)| ![enter image description here](https://is5-ssl.mzstatic.com/image/thumb/Purple128/v4/e0/e8/aa/e0e8aadf-6692-d974-7962-778160e7eb5f/pr_source.png/690x0w.png) 
+ 全聚星 [App Store Link](https://itunes.apple.com/us/app/%E5%85%A8%E8%81%9A%E6%98%9F/id1140827531?mt=8) ![enter image description here](https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/4d/a2/57/4da25727-eda7-c7f8-8ce5-3b44591f3863/AppIcon-1x_U007emarketing-85-220-4.png/690x0w.jpg) |![enter image description here](https://is4-ssl.mzstatic.com/image/thumb/Purple118/v4/be/5f/0c/be5f0cbb-0265-b34d-bc34-ab9859f97350/mzl.bwmxymgk.jpg/690x0w.jpg) | Yesoul  [App Store Link](https://itunes.apple.com/us/app/yesoul/id1144444969?mt=8) ![enter image description here](https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/3f/0b/80/3f0b80df-e7fd-7c86-c3d2-472393304509/AppIcon-0-1x_U007emarketing-0-0-sRGB-85-220-0-7.png/690x0w.jpg) | ![enter image description here](https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/bb/96/9f/bb969f5e-48e8-b721-2db3-cf26d7b916f8/pr_source.png/460x0w.jpg) 
+贵州充电通 [App Store Link](https://itunes.apple.com/us/app/%E8%B4%B5%E5%B7%9E%E5%85%85%E7%94%B5%E9%80%9A/id1455932848?mt=8&app=itunes&ign-mpt=uo%3D4) ![enter image description here](https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/d5/db/44/d5db4437-d409-ff48-3c19-1feabbd7b2a1/AppIcon-0-1x_U007emarketing-0-0-sRGB-85-220-0-7.png/690x0w.jpg) | ![enter image description here](https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/17/51/23/17512338-5bf2-3f4a-bda8-c4986dfe5be6/pr_source.png/690x0w.jpg) | 卓尔购  [App Store Link](https://itunes.apple.com/cn/app/%E5%8D%93%E5%B0%94%E8%B4%AD-%E6%89%B9%E5%8F%91%E9%87%87%E8%B4%AD%E8%BF%9B%E8%B4%A7%E9%A6%96%E9%80%89/id1063104387?mt=8)  ![enter image description here](https://is3-ssl.mzstatic.com/image/thumb/Purple114/v4/3c/36/e5/3c36e51e-47e9-0526-5652-bbc6acf3739c/mzl.emuqqmck.png/690x0w.jpg) | ![enter image description here](https://is3-ssl.mzstatic.com/image/thumb/Purple125/v4/fc/eb/e2/fcebe232-3a72-93fc-ed3a-2942ac22ab79/pr_source.png/690x0w.png) 
+卓越管家 [App Store Link](https://itunes.apple.com/cn/app//id1268483803?mt=8) ![enter image description here](https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/b9/6a/d8/b96ad81a-3805-b1c8-3a56-83940fed4b01/AppIcon-0-1x_U007emarketing-0-85-220-5.png/690x0w.jpg) | ![enter image description here](https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/ca/f8/f8/caf8f846-ddc9-2ada-99c3-9758fc099288/pr_source.png/690x0w.jpg) | 悦守护 [App Store Link](https://itunes.apple.com/cn/app/%E6%82%A6%E5%AE%88%E6%8A%A4/id1347678565?mt=8) | ![](http://ww2.sinaimg.cn/large/006tNc79ly1g3a9upgmmjj30j615iads.jpg)
+筑集采采购端 [App Store Link](https://itunes.apple.com/cn/app//id1041802973?mt=8)  ![enter image description here](https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/f4/d2/1d/f4d21df2-57da-e0a0-5de2-2c9437553fcb/AppIcon-0-1x_U007emarketing-0-0-85-220-7.png/690x0w.jpg) | ![](http://ww1.sinaimg.cn/large/006tNc79ly1g3aa9fncl1j30j60y3adb.jpg) |  筑集采供应端  [App Store Link](https://itunes.apple.com/fr/app//id1035221629?mt=8) ![enter image description here](https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/8f/ba/6e/8fba6ec9-97e2-e008-f2f2-a30a1641cfa6/AppIcon-0-1x_U007emarketing-0-0-85-220-7.png/690x0w.jpg) |  ![](http://ww3.sinaimg.cn/large/006tNc79ly1g3aaa6itrcj30j60y30xl.jpg) | 
+桂富宝  [App Store Link](https://itunes.apple.com/nz/app/e%E8%81%94%E7%9B%9F%E5%95%86%E5%9F%8E/id979819957)  ![enter image description here](https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/6f/62/22/6f6222c7-e54e-2ea7-feb7-ce481e562248/AppIcon-0-1x_U007emarketing-0-0-85-220-0-10.png/690x0w.jpg) | ![enter image description here](https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/4c/80/90/4c8090af-17b4-c152-2ba3-3037d5e7e905/pr_source.png/690x0w.jpg) |  小猪奔奔  [App Store Link](https://itunes.apple.com/cn/app/%E5%B0%8F%E7%8C%AA%E5%A5%94%E5%A5%94-%E7%94%A8%E6%88%B7%E7%89%88/id1124274649?mt=8) ![enter image description here](https://is5-ssl.mzstatic.com/image/thumb/Purple62/v4/78/b6/fd/78b6fde6-084b-3503-b2eb-3e85fa30beb0/AppIcon-1x_U007emarketing-85-220-4.png/690x0w.jpg) | ![enter image description here](https://is4-ssl.mzstatic.com/image/thumb/Purple118/v4/c8/d5/5e/c8d55e4d-9a39-0f12-d121-1bb15d8fed56/mzl.iizreksh.png/690x0w.jpg)
+娃娃坞(开发中)![](http://ww3.sinaimg.cn/large/006tNc79ly1g3aaruxhn1j30j60j60t3.jpg) |  ![](http://ww1.sinaimg.cn/large/006tNc79ly1g3aaf0s1yhj30l005iwer.jpg) | 更多APP请访问 [《使用 CYLTabBarController 做的 APP，来这里报道下吧》]( https://github.com/ChenYilong/CYLTabBarController/issues/314 )  | 如果你正在使用也请提交到这里 [《使用 CYLTabBarController 做的 APP，来这里报道下吧》]( https://github.com/ChenYilong/CYLTabBarController/issues/314 ) 
+
+
+
+## [CN]导航 
+## [EN]CONTENTS 
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -47,16 +94,18 @@
 
 
 ## 与其他自定义TabBarController的区别
+## Comparetion with other Libraries
 
- 特点 |解释
--------------|-------------
- 低耦合，易删除 | 1、TabBar设置与业务完全分离，最低只需传两个数组即可完成主流App框架搭建。</p> 2、 PlusButton 的所有设置都在单独的一个类（ `CYLPlusButton` 的子类）中实现：删除该特定的类，就能完全将 PlusButton 从项目中删除掉。
- `TabBar` 以及 `TabBar` 内的 `TabBarItem` 均使用系统原生的控件 | 因为使用原生的控件，并非 `UIButton` 或 `UIView` 。好处如下：</p> 1. 无需反复调“间距位置等”来接近系统效果。</p> 2. 在push到下一页时 `TabBar`  的隐藏和显示之间的过渡效果跟系统一致（详见“ [集成后的效果](https://github.com/ChenYilong/CYLTabBarController#集成后的效果) ”部分，给出了效果图） </p> 3. 原生控件，所以可以使用诸多系统API，比如：可以使用 ` [UITabBar appearance];` 、` [UITabBarItem appearance];` 设置样式。（详见“[补充说明](https://github.com/ChenYilong/CYLTabBarController#补充说明) ”部分，给出了响应代码示例）
- 自动监测是否需要添加“加号”按钮，</p>并能自动设置位置 |[CYLTabBarController](https://github.com/ChenYilong/CYLTabBarController) 既支持类似微信的“中规中矩”的 `TabBarController` 样式，并且默认就是微信这种样式，同时又支持类似“微博”或“淘宝闲鱼”这种具有不规则加号按钮的 `TabBarController` 。想支持这种样式，只需自定义一个加号按钮，[CYLTabBarController](https://github.com/ChenYilong/CYLTabBarController) 能检测到它的存在并自动将 `tabBar` 排序好，无需多余操作，并且也预留了一定接口来满足自定义需求。</p>“加号”按钮的样式、frame均在自定义的类中独立实现，不会涉及tabbar相关设置。
+[CN]特点 </p>[EN]Features |[CN]解释 </p>[EN]Explanation
+:-------------:|:-------------:
+[CN]一行代码支持Lottie动画TabBar样式 </p> [EN] It only needs one line of code to have an animated TabBar with Lottie. |[CN][使用方法]( https://github.com/ChenYilong/CYLTabBarController/issues/341) </p>  [EN][How to add animation of Lottie with one line of code.]( https://github.com/ChenYilong/CYLTabBarController/issues/341)  </p> ![enter image description here](http://i66.tinypic.com/25oxkqo.jpg)  </p>  ![enter image description here](http://i64.tinypic.com/2h835ae.jpg) 
+[CN]低耦合，易删除</p>[EN]Loose coupling  | [CN]1、TabBar设置与业务完全分离，最低只需传两个数组即可完成主流App框架搭建。</p>[EN]1. This library is independent of your business codes which only needs two array parameters to be passed.   </p> [CN]2、 PlusButton 的所有设置都在单独的一个类（ `CYLPlusButton` 的子类）中实现：删除该特定的类，就能完全将 PlusButton 从项目中删除掉。</p>[EN]2.PlusButton is also independent. If you delete the code of this class, you remove the PlusButton feature from your UI on screen completely.  
+[CN]`TabBar` 以及 `TabBar` 内的 `TabBarItem` 均使用系统原生的控件</p>[EN]`TabBar` and `TabBarItem` those parts of this library both are system objects. | [CN]因为使用原生的控件，并非 `UIButton` 或 `UIView` 。好处如下：</p>[EN]Advantages of quitting choosing `UIButton` or `UIView`: </p> 1. 无需反复调“间距位置等”来接近系统效果。</p>[EN]There is not need to adjust those object to make them close to a system  object appearance. </p> 2. 在push到下一页时 `TabBar`  的隐藏和显示之间的过渡效果跟系统一致（详见“ [集成后的效果](https://github.com/ChenYilong/CYLTabBarController#集成后的效果) ”部分，给出了效果图）</p>[EN]2. A push animation is same to a system objects appearance. </p> 3. 原生控件，所以可以使用诸多系统API，比如：可以使用 ` [UITabBar appearance];` 、` [UITabBarItem appearance];` 设置样式。（详见“[补充说明](https://github.com/ChenYilong/CYLTabBarController#补充说明) ”部分，给出了响应代码示例）</p>[EN]3.It is convenient to use the system API such as ` [UITabBar appearance];`,` [UITabBarItem appearance];`, etc.
+ 自动监测是否需要添加“加号”按钮，</p>并能自动设置位置</p>[EN] It is able to check if need to add a PlusButton automatically. |[CYLTabBarController](https://github.com/ChenYilong/CYLTabBarController) 既支持类似微信的“中规中矩”的 `TabBarController` 样式，并且默认就是微信这种样式，同时又支持类似“微博”或“淘宝闲鱼”这种具有不规则加号按钮的 `TabBarController` 。想支持这种样式，只需自定义一个加号按钮，[CYLTabBarController](https://github.com/ChenYilong/CYLTabBarController) 能检测到它的存在并自动将 `tabBar` 排序好，无需多余操作，并且也预留了一定接口来满足自定义需求。</p>“加号”按钮的样式、frame均在自定义的类中独立实现，不会涉及tabbar相关设置。
+  支持动态更新 | 可动态删除PlusButton ，可以动态更新样式 </p> ![enter image description here](http://i63.tinypic.com/208ba7a.jpg)
 即使加号按钮超出了tabbar的区域，</p>超出部分依然能响应点击事件 | 红线内的区域均能响应tabbar相关的点击事件，</p>![enter image description here](http://i57.tinypic.com/2r7ndzk.jpg)
 允许指定加号按钮位置 | 效果如下：</p>![enter image description here](http://a64.tinypic.com/2mo0h.jpg) </p>Airbnb-app效果：</p>![enter image description here](http://a63.tinypic.com/2mgk02v.gif)
 支持让 `TabBarItem` 仅显示图标，并自动使图标垂直居中，支持自定义TabBar高度 | 效果可见Airbnb-app效果，或者下图</p>![enter image description here](https://cloud.githubusercontent.com/assets/7238866/10777333/5d7811c8-7d55-11e5-88be-8cb11bbeaf90.png)
- 支持自定义动画 | ![](https://ww1.sinaimg.cn/large/006tNbRwly1fg9hu6qnwbg308v0gctcc.gif)
  支持角标自定义View | ![enter image description here](https://ws4.sinaimg.cn/large/006tKfTcly1fgl0yxcaboj30yi06at8t.jpg) 
  支持多TabBar嵌套，并指定PlusButton位置 | ![enter image description here](https://ws4.sinaimg.cn/large/006tNc79ly1fmn3005isfg308r0iltl6.gif)
 支持CocoaPods |容易集成
@@ -125,7 +174,7 @@
   如果您的网络已经翻墙，在终端中运行如下命令直接安装：
 
   ```
-     sudo gem install cocoapods
+  sudo gem install cocoapods
   ```
 
   如果您的网络不能翻墙，可以通过国内 Ruby China 的 RubyGems 镜像进行安装。
@@ -133,8 +182,9 @@
   在终端依次运行以下命令：
 
   ```
-     gem sources --add https://gems.ruby-china.org/ --remove https://rubygems.org/
-     sudo gem install cocoapods
+  gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
+  
+  sudo gem install cocoapods
   ```
 
  2. 查询 CocoaPods 源中的本库
@@ -142,13 +192,13 @@
   在终端中运行以下命令：
 
   ```
-     pod search CYLTabBarController
+  pod search CYLTabBarController
   ```
  
    这里注意，这个命令搜索的是本机上的最新版本，并没有联网查询。如果运行以上命令，没有搜到或者搜不到最新版本，您可以运行以下命令，更新一下您本地的 CocoaPods 源列表。
 
   ```
-     pod repo update
+  pod repo update
   ```
  
  3. 使用 CocoaPods 导入
@@ -156,39 +206,39 @@
   打开终端，进入到您的工程目录，执行以下命令，会自动生成一个 Podfile 文件。
 
   ```
-     pod init
+  pod init
   ```
 
   然后使用 CocoaPods 进行安装。如果尚未安装 CocoaPods，运行以下命令进行安装：
 
  ```
-    gem install cocoapods
+ gem install cocoapods
  ```
 
-  打开 Podfile，在您项目的 target 下加入以下内容。（在此以 v1.6.7 版本为例）
+  打开 Podfile，在您项目的 target 下加入以下内容。（此处示例可能是旧版本，使用时请替换为最新版，最新版信息可以从这里获取：<a href="https://github.com/ChenYilong/CYLTabBarController/blob/master/CYLTabBarController.podspec"><img src="https://img.shields.io/badge/Pod-GetLatestVersion-green.svg?style=flat"></a>）
 
   在文件 `Podfile` 中加入以下内容：
 
  ```
-    pod 'CYLTabBarController', '~> 1.17.4'
+ pod 'CYLTabBarController', '~> 1.24.0'
  ```
 
   然后在终端中运行以下命令：
 
  ```
-    pod install
+ pod install
  ```
 
   或者这个命令：
 
  ```
-    # 禁止升级 CocoaPods 的 spec 仓库，否则会卡在 Analyzing dependencies，非常慢
-    pod update --verbose --no-repo-update
+ # 禁止升级 CocoaPods 的 spec 仓库，否则会卡在 Analyzing dependencies，非常慢
+ pod update --verbose --no-repo-update
  ```
 
   如果提示找不到库，则可去掉 `--no-repo-update`。
 
-  完成后1.17.4，CocoaPods 会在您的工程根目录下生成一个 `.xcworkspace` 文件。您需要通过此文件打开您的工程，而不是之前的 `.xcodeproj`。
+  完成后1.24.0，CocoaPods 会在您的工程根目录下生成一个 `.xcworkspace` 文件。您需要通过此文件打开您的工程，而不是之前的 `.xcodeproj`。
 
 **CocoaPods 使用说明**
 
@@ -196,15 +246,19 @@
 
 CocoaPods 中，有几种设置 CYLTabBarController 版本的方法。如：
 
-`>= 1.16.X` 会根据您本地的 CocoaPods 源列表，导入不低于 `1.18.X` 版本的 CYLTabBarController。
+`>= 1.n.X` 会根据您本地的 CocoaPods 源列表，导入不低于 `1.(n+1).X` 版本的 CYLTabBarController。
 
-`~> 1.16.X` 会根据您本地的 CocoaPods 源列表，介于 1.16.X~1.18.0 之前版本的 CYLTabBarController。
-我们建议您锁定版本，便于团队开发。如，指定 1.17.4 版本。
+`~> 1.n.X` 会根据您本地的 CocoaPods 源列表，介于 1.n.X~1.(n+1).0 之前版本的 CYLTabBarController。
+
+建议选择后者：锁定版本，便于团队开发。如：
+
+（此处示例可能是旧版本，使用时请替换为最新版，最新版信息可以从这里获取：<a href="https://github.com/ChenYilong/CYLTabBarController/blob/master/CYLTabBarController.podspec"><img src="https://img.shields.io/badge/Pod-GetLatestVersion-green.svg?style=flat"></a>）
 
  
 ```
-    pod 'CYLTabBarController', '~> 1.17.4'
+pod 'CYLTabBarController', '~> 1.24.0'
 ```
+
 
  - 升级本地 CocoaPods 源
 
@@ -213,7 +267,7 @@ CocoaPods 中，有几种设置 CYLTabBarController 版本的方法。如：
  如果搜索的时候没有搜到或者搜不到最新版本，可以执行以下命令更新一下本地的缓存。
 
  ```
-pod repo update
+ pod repo update
  ```
  
  - 升级工程的 CYLTabBarController 版本
@@ -221,7 +275,7 @@ pod repo update
  更新您工程目录中 Podfile 指定的 CYLTabBarController 版本后，在终端中执行以下命令。
 
  ```
-pod update
+ pod update
  ```
 
 
@@ -241,54 +295,76 @@ pod update
 ###  第二步：设置CYLTabBarController的两个数组：控制器数组和TabBar属性数组
 
  ```Objective-C
- - (void)setupViewControllers {
-    CYLHomeViewController *firstViewController = [[CYLHomeViewController alloc] init];
-    UIViewController *firstNavigationController = [[UINavigationController alloc]
-                                                   initWithRootViewController:firstViewController];
-    
-    CYLSameFityViewController *secondViewController = [[CYLSameFityViewController alloc] init];
-    UIViewController *secondNavigationController = [[UINavigationController alloc]
-                                                    initWithRootViewController:secondViewController];
-    
+ //MainTabBarController
+ 
+@interface MainTabBarController : CYLTabBarController
+@end
 
-    CYLTabBarController *tabBarController = [[CYLTabBarController alloc] init];
-    [self customizeTabBarForController:tabBarController];
-    
-    [tabBarController setViewControllers:@[
-                                           firstNavigationController,
-                                           secondNavigationController,
-                                           ]];
-    self.tabBarController = tabBarController;
+
+- (instancetype)init {
+    if (!(self = [super init])) {
+        return nil;
+    }
+    /**
+     * 以下两行代码目的在于手动设置让TabBarItem只显示图标，不显示文字，并让图标垂直居中。
+     * 等效于在 `-tabBarItemsAttributesForController` 方法中不传 `CYLTabBarItemTitle` 字段。
+     * 更推荐后一种做法。
+     */
+    UIEdgeInsets imageInsets = UIEdgeInsetsZero;//UIEdgeInsetsMake(4.5, 0, -4.5, 0);
+    UIOffset titlePositionAdjustment = UIOffsetMake(0, -3.5);
+    CYLTabBarController *tabBarController = [CYLTabBarController tabBarControllerWithViewControllers:self.viewControllers
+                                                                               tabBarItemsAttributes:self.tabBarItemsAttributesForController
+                                                                                         imageInsets:imageInsets
+                                                                             titlePositionAdjustment:titlePositionAdjustment
+                                                                                             context:nil
+                                             ];
+    [self customizeTabBarAppearance:tabBarController];
+    self.navigationController.navigationBar.hidden = YES;
+    return (self = (MainTabBarController *)tabBarController);
 }
 
-/*
- *
- 在`-setViewControllers:`之前设置TabBar的属性，
- *
- */
-- (void)customizeTabBarForController:(CYLTabBarController *)tabBarController {
-    
-    NSDictionary *dict1 = @{
-                            CYLTabBarItemTitle : @"首页",
-                            CYLTabBarItemImage : @"home_normal",
-                            CYLTabBarItemSelectedImage : @"home_highlight",
-                            };
-    NSDictionary *dict2 = @{
-                            CYLTabBarItemTitle : @"同城",
-                            CYLTabBarItemImage : @"mycity_normal",
-                            CYLTabBarItemSelectedImage : @"mycity_highlight",
-                            };
+- (NSArray *)viewControllers {
+    CYLHomeViewController *firstViewController = [[CYLHomeViewController alloc] init];
+    UIViewController *firstNavigationController = [[CYLBaseNavigationController alloc]
+                                                   initWithRootViewController:firstViewController];
+    [firstViewController cyl_setHideNavigationBarSeparator:YES];
+    CYLSameCityViewController *secondViewController = [[CYLSameCityViewController alloc] init];
+    UIViewController *secondNavigationController = [[CYLBaseNavigationController alloc]
+                                                    initWithRootViewController:secondViewController];
+    [secondViewController cyl_setHideNavigationBarSeparator:YES];
+    NSArray *viewControllers = @[
+                                 firstNavigationController,
+                                 secondNavigationController,
+                                 ];
+    return viewControllers;
+}
 
-    NSArray *tabBarItemsAttributes = @[ dict1, dict2 ];
-    tabBarController.tabBarItemsAttributes = tabBarItemsAttributes;
+- (NSArray *)tabBarItemsAttributesForController {
+    NSDictionary *firstTabBarItemsAttributes = @{
+                                                 CYLTabBarItemTitle : @"首页",
+                                                 CYLTabBarItemImage : self.darkMode ? @"home_highlight" : @"home_normal",  /* NSString and UIImage are supported*/
+                                                 CYLTabBarItemSelectedImage : @"home_highlight",  /* NSString and UIImage are supported*/
+                                                 };
+    NSDictionary *secondTabBarItemsAttributes = @{
+                                                  CYLTabBarItemTitle : @"鱼塘",
+                                                  CYLTabBarItemImage : self.darkMode ? @"fishpond_highlight" : @"fishpond_normal",
+                                                  CYLTabBarItemSelectedImage : @"fishpond_highlight",
+                                                  };
+    
+
+    NSArray *tabBarItemsAttributes = @[
+                                       firstTabBarItemsAttributes,
+                                       secondTabBarItemsAttributes,
+                                       ];
+    return tabBarItemsAttributes;
 }
  ```
 
 在这个字典中，`CYLTabBarItemImage` 和 `CYLTabBarItemSelectedImage` 支持 `NSString`、`UIImage`
 两种格式。`CYLTabBarItemTitle` 不设置将只展示图标，并会对布局作出居中处理。
 
-
 ###  第三步：将CYLTabBarController设置为window的RootViewController
+
 
  ```Objective-C
  - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -298,6 +374,8 @@ pod update
     return YES;
 }
  ```
+ 
+或者将 CYLTabBarController 的子类设为 RootViewCOntroller ，也可以将CYLTabBarController子类的 NavigationViewController 作为 RootViewCOntroller，方便动态更新，Demo 中就是采用后者。
 
 
 ###  第四步（可选）：创建自定义的形状不规则加号按钮
@@ -308,9 +386,9 @@ pod update
 
  1. 实现  `CYLPlusButtonSubclassing`  协议 
 
- 2. 子类将自身类型进行注册，需要在 `-application:didFinishLaunchingWithOptions:` 方法里面调用 `[YourClass registerPlusButton]` 
+ 2. 子类将自身类型进行注册：调用 `[YourClass registerPlusButton]`，需要在 RootViewCOntroller 的 ViewDidLoad 中注册，也可以在 `-application:didFinishLaunchingWithOptions:` 方法里面操作。 
 
-   这里注意，不能在子类的 `+load` 方法中调用，比如像下面这样做，在 iOS10 系统上有 Crash 的风险：
+   这里注意，不建议在子类的 `+load` 方法中调用，比如像下面这样做，在 iOS10 系统上有 Crash 的风险：
 
  ```Objective-C
  + (void)load {
@@ -332,6 +410,7 @@ pod update
  ```Objective-C
  + (NSUInteger)indexOfPlusButtonInTabBar;
  ```
+ 
 用来自定义加号按钮的位置，如果不实现默认居中，但是如果 `tabbar` 的个数是奇数则必须实现该方法，否则 `CYLTabBarController` 会抛出 `exception` 来进行提示。
 
 主要适用于如下情景：
@@ -412,7 +491,7 @@ Airbnb-app效果：
  ```
 
 效果如下，
-1.17.4
+1.24.0
 ![enter image description here](http://i64.tinypic.com/vx16r5.jpg)
 
 同时你也可以顺便测试下 `CYLTabBarController` 的这一个特性：
@@ -745,7 +824,7 @@ Demo 演示的效果图：
 
 ### 多TabBar嵌套，并指定PlusButton位置 
 
-该功能的版本需要 >= v1.17.4。
+该功能旧版本可能并不支持，建议更新最新版中使用。
 
 效果图：
 
@@ -770,15 +849,20 @@ Demo 演示的效果图：
 
 仓库中给出了一个Swift Demo，文件夹叫做 Example-Swift。
 
+感谢[@WeMadeCode](https://github.com/WeMadeCode) 提供的 Swift 版 Demo，原仓库地址：[WeMadeCode/CYLTabBarController-Swift](https://github.com/WeMadeCode/CYLTabBarController-Swift) 
+
 具体的编写步骤参考热心网友提供的教程： [《从头开始swift2.1 仿搜材通项目（三） 主流框架Tabbed的搭建》]( http://www.jianshu.com/p/c5bc2eae0f55?nomobile=yes ) 
 
-这里注意，文章的示例代码有问题，少了设置 PlusButton 大小的代码：
+这里注意，文章的早期一个版本的示例代码有问题（笔者注：现在已经更新了），少了设置 PlusButton 大小的代码：
 这将导致 PlusButton 点击事件失效，具体修改代码如下：
 ![enter image description here](http://i67.tinypic.com/118ottv.jpg)
 
 ### 搭配 Storyboard 使用 CYLTabBarController
 
-[这里](https://github.com/ChenYilong/CYLDeallocBlockExecutor) ，里面有个文件夹CYLTabBarControllerTestDemo，这个Demo演示了如何搭配 Storyboard 使用。
+参考：
+
+ - 见这里 [issue讨论]( https://github.com/ChenYilong/CYLTabBarController/issues/170 ) 
+ - [这里](https://github.com/ChenYilong/CYLDeallocBlockExecutor) ，里面有个文件夹CYLTabBarControllerTestDemo，这个Demo演示了如何搭配 Storyboard 使用。
 
 ### 源码实现原理
 
@@ -925,12 +1009,17 @@ button.frame = CGRectMake(0.0, 0.0, w, h);
  ```Objective-C
  [UIScreen mainScreen].bounds.size.width / [CYLTabBarController allItemsInTabBarCount]
  ```
+ 
+ 
+Q：如何兼容 Lottie 动画？
+A：用法见：https://github.com/ChenYilong/CYLTabBarController/issues/341
+
 
 （更多iOS开发干货，欢迎关注  [微博@iOS程序犭袁](http://weibo.com/luohanchenyilong/) ）
 
 ----------
 Posted by [微博@iOS程序犭袁](http://weibo.com/luohanchenyilong/)  
-原创文章，版权声明：自由转载-非商用-非衍生-保持署名 | [Creative Commons BY-NC-ND 3.0](http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh)
+原创作品，版权声明：License MIT
 <p align="center"><a href="http://weibo.com/u/1692391497?s=6uyXnP" target="_blank"><img border="0" src="http://service.t.sina.com.cn/widget/qmd/1692391497/b46c844b/1.png"/></a></a>
 
 

@@ -2,8 +2,8 @@
 //  CYLPlusButton.m
 //  CYLTabBarController
 //
-//  v1.16.0 Created by 微博@iOS程序犭袁 ( http://weibo.com/luohanchenyilong/ ) on 10/20/15.
-//  Copyright © 2015 https://github.com/ChenYilong . All rights reserved.
+//  v1.21.x Created by 微博@iOS程序犭袁 ( http://weibo.com/luohanchenyilong/ ) on 10/20/15.
+//  Copyright © 2018 https://github.com/ChenYilong . All rights reserved.
 //
 
 #import "CYLPlusButton.h"
@@ -46,6 +46,12 @@ UIViewController *CYLPlusChildViewController = nil;
     }
 }
 
++ (void)removePlusButton {
+    CYLExternPlusButton = nil;
+    [CYLPlusChildViewController cyl_setPlusViewControllerEverAdded:NO];
+    CYLPlusChildViewController = nil;
+}
+
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
 + (void)registerSubclass {
@@ -58,16 +64,10 @@ UIViewController *CYLPlusChildViewController = nil;
     if (notNeedConfigureSelectionStatus) {
         return;
     }
-    if (sender.selected) {
-        return;
-    }
-    sender.selected = YES;
     CYLTabBarController *tabBarController = [sender cyl_tabBarController];
     NSInteger index = [tabBarController.viewControllers indexOfObject:CYLPlusChildViewController];
-    @try {
+    if (NSNotFound != index && (index < tabBarController.viewControllers.count)) {
         [tabBarController setSelectedIndex:index];
-    } @catch (NSException *exception) {
-        NSLog(@"🔴类名与方法名：%@（在第%@行），描述：%@", @(__PRETTY_FUNCTION__), @(__LINE__), exception);
     }
 }
 

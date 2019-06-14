@@ -5,7 +5,7 @@ target 'CYLTabBarController-Swift' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
   
-  pod 'CYLTabBarController', '~> 1.17.6'
+  pod 'CYLTabBarController', '~> 1.26.0'
 
   # Pods for CYLTabBarController-Swift
 
