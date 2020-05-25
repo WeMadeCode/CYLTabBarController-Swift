@@ -43,7 +43,7 @@ typedef void (^CYLPushOrPopCallback)(NSArray<__kindof UIViewController *> *viewC
 /**
  *
  *  @param value String value, default is `nil`. if value equal @"" means red dot style.
- *  @param animationType
+ *  @param animationType animationType
  *  @attention
  - 调用该方法前已经添加了系统的角标，调用该方法后，系统的角标并未被移除，只是被隐藏，调用 `-cyl_removeTabBadgePoint` 后会重新展示。
  - 不支持 CYLPlusChildViewController 对应的 TabBarItem 角标设置，调用会被忽略。
@@ -137,9 +137,6 @@ typedef void (^CYLPushOrPopCallback)(NSArray<__kindof UIViewController *> *viewC
  */
 - (void)cyl_pushViewController:(UIViewController *)viewController animated:(BOOL)animated;
 - (UIViewController *)cyl_getViewControllerInsteadOfNavigationController;
-+ (UIViewController * __nullable)cyl_topmostViewController;
-+ (UINavigationController * __nullable)cyl_currentNavigationController;
-+ (void)cyl_dismissAll:(void (^ __nullable)(void))completion;
 - (void)cyl_handleNavigationBackAction;
 - (void)cyl_handleNavigationBackActionWithAnimated:(BOOL)animated;
 

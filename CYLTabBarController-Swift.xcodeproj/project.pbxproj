@@ -19,8 +19,6 @@
 		922DCF131FF63402005C89BE /* PublishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922DCF051FF63402005C89BE /* PublishViewController.swift */; };
 		922DCF141FF63402005C89BE /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922DCF071FF63402005C89BE /* MainTabBarController.swift */; };
 		922DCF151FF63402005C89BE /* CYLPlusButtonSubclass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922DCF081FF63402005C89BE /* CYLPlusButtonSubclass.swift */; };
-		9281D86A20A5781C003303A3 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9281D86920A5781C003303A3 /* ColorExtensions.swift */; };
-		9281D86D20A5794F003303A3 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9281D86C20A5794E003303A3 /* UIColor+Extension.swift */; };
 		92DD37E120A5740500754AC8 /* NextHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD37DF20A5740500754AC8 /* NextHomeViewController.swift */; };
 		92DD37E220A5740500754AC8 /* NextHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92DD37E020A5740500754AC8 /* NextHomeViewController.xib */; };
 		C0196AB673A3C11A8689ED66 /* Pods_CYLTabBarController_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DEC604443F0BED5845C1590 /* Pods_CYLTabBarController_Swift.framework */; };
@@ -42,8 +40,6 @@
 		922DCF051FF63402005C89BE /* PublishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishViewController.swift; sourceTree = "<group>"; };
 		922DCF071FF63402005C89BE /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		922DCF081FF63402005C89BE /* CYLPlusButtonSubclass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CYLPlusButtonSubclass.swift; sourceTree = "<group>"; };
-		9281D86920A5781C003303A3 /* ColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
-		9281D86C20A5794E003303A3 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		92DD37DF20A5740500754AC8 /* NextHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextHomeViewController.swift; sourceTree = "<group>"; };
 		92DD37E020A5740500754AC8 /* NextHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NextHomeViewController.xib; sourceTree = "<group>"; };
 		9DEC604443F0BED5845C1590 /* Pods_CYLTabBarController_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CYLTabBarController_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,8 +139,6 @@
 		922DCEF91FF63402005C89BE /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				9281D86C20A5794E003303A3 /* UIColor+Extension.swift */,
-				9281D86920A5781C003303A3 /* ColorExtensions.swift */,
 				922DCF001FF63402005C89BE /* AppDelegate.swift */,
 				922DCEFA1FF63402005C89BE /* ViewController.swift */,
 			);
@@ -299,14 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9281D86A20A5781C003303A3 /* ColorExtensions.swift in Sources */,
 				922DCF0C1FF63402005C89BE /* ViewController.swift in Sources */,
 				922DCF151FF63402005C89BE /* CYLPlusButtonSubclass.swift in Sources */,
 				922DCF141FF63402005C89BE /* MainTabBarController.swift in Sources */,
 				922DCF121FF63402005C89BE /* MessageViewController.swift in Sources */,
 				92DD37E120A5740500754AC8 /* NextHomeViewController.swift in Sources */,
 				922DCF091FF63402005C89BE /* PersonalViewController.swift in Sources */,
-				9281D86D20A5794F003303A3 /* UIColor+Extension.swift in Sources */,
 				922DCF0B1FF63402005C89BE /* ConnectionViewController.swift in Sources */,
 				922DCF101FF63402005C89BE /* AppDelegate.swift in Sources */,
 				922DCF0A1FF63402005C89BE /* HomeViewController.swift in Sources */,
@@ -453,6 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BPBCHD64GW;
 				INFOPLIST_FILE = "CYLTabBarController-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "WeMadeCode.CYLTabBarController-Swift";
@@ -468,6 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BPBCHD64GW;
 				INFOPLIST_FILE = "CYLTabBarController-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "WeMadeCode.CYLTabBarController-Swift";

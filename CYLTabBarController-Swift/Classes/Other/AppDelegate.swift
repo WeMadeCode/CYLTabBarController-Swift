@@ -12,10 +12,7 @@ import CYLTabBarController
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate,UITabBarControllerDelegate {
   
-    
-
     var window: UIWindow?
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
        
@@ -32,8 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UITabBarControllerDelegate
         //tabbar背景色
         UITabBar.appearance().backgroundColor = UIColor.white
         //tabbar字体颜色
-        UITabBar.appearance().tintColor = UIColor(r: 255, g: 102, b: 0)
-        
+        UITabBar.appearance().tintColor = UIColor(red:255.0/255.0,green:102.0/255.0,blue:0,alpha:1.0)
+
         return true
     }
 

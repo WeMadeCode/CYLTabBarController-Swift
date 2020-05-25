@@ -22,4 +22,59 @@
     return [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 }
 
++ (UIImage *)cyl_assetImageName:(NSString *)assetImageName
+             userInterfaceStyle:(NSInteger)userInterfaceStyle  {
+    UIImage *image = [UIImage imageNamed:@"image"];
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 130000
+    if (@available(iOS 13.0, *)) {
+#if __has_include(<UIKit/UIScene.h>)
+        UITraitCollection *trait;
+//        UIUserInterfaceStyle currentUserInterfaceStyle = [UITraitCollection currentTraitCollection].userInterfaceStyle;
+//        if (currentUserInterfaceStyle == UIUserInterfaceStyleUnspecified) {
+//            currentUserInterfaceStyle == userInterfaceStyle;
+//        }
+        trait = [UITraitCollection traitCollectionWithUserInterfaceStyle:userInterfaceStyle];
+        image = [image.imageAsset imageWithTraitCollection:trait];
+        //TODO:
+        return image;
+#else
+#endif
+    }
+#endif
+    return image;
+}
+
++ (UIImage *)cyl_lightOrDarkModeImageWithLightImage:(UIImage *)lightImage
+                                     darkImage:(UIImage *)darkImage  {
+    return [self cyl_lightOrDarkModeImageWithOwner:nil lightImage:lightImage darkImage:darkImage];
+}
+
++ (UIImage *)cyl_lightOrDarkModeImageWithOwner:(id<UITraitEnvironment>)owner
+                 lightImageName:(NSString *)lightImageName
+                  darkImageName:(NSString *)darkImageName {
+    UIImage *lightImage = [UIImage imageNamed:lightImageName];
+    UIImage *darkImage= [UIImage imageNamed:darkImageName];
+    UIImage *lightOrDarkImage = [UIImage cyl_lightOrDarkModeImageWithOwner:owner lightImage:lightImage darkImage:darkImage];
+    return lightOrDarkImage;
+}
+
++ (UIImage *)cyl_lightOrDarkModeImageWithOwner:(id<UITraitEnvironment>)owner
+                                    lightImage:(UIImage *)lightImage
+                                     darkImage:(UIImage *)darkImage {
+    BOOL isDarkImage = NO;
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 130000
+    if (@available(iOS 13.0, *)) {
+#if __has_include(<UIKit/UIScene.h>)
+        //TODO:
+        UITraitCollection *traitCollection = owner.traitCollection ?: [UITraitCollection currentTraitCollection];
+        UIUserInterfaceStyle userInterfaceStyle = traitCollection.userInterfaceStyle;
+        isDarkImage = (userInterfaceStyle == UIUserInterfaceStyleDark);
+#else
+#endif
+    }
+#endif
+    UIImage *image = (isDarkImage ? darkImage : lightImage);
+    return image;
+}
+
 @end

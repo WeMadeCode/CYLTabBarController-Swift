@@ -15,8 +15,6 @@ class MainTabBarController: CYLTabBarController {
         super.viewDidLoad()
         
         self.delegate = self
-        
-        
     }
     
     

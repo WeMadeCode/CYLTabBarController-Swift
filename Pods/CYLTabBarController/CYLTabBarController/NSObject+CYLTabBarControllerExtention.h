@@ -10,13 +10,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSObject (CYLLandscapeExtension)
+@interface NSObject (CYLTabBarControllerExtention)
 
 @property (nonatomic, assign, getter=cyl_isForceLandscape, setter=cyl_setIsForceLandscape:) BOOL cyl_isForceLandscape;
 
 - (void)cyl_forceUpdateInterfaceOrientation:(UIInterfaceOrientation)orientation;
 
 - (UIResponder<UIApplicationDelegate> *)cyl_sharedAppDelegate;
++ (UIViewController * __nullable)cyl_topmostViewController;
+
++ (UINavigationController * __nullable)cyl_currentNavigationController;
+
++ (void)cyl_dismissAll:(void (^ __nullable)(void))completion;
 
 @end
 

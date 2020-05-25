@@ -12,7 +12,7 @@ import CYLTabBarController
 class CYLPlusButtonSubclass: CYLPlusButton,CYLPlusButtonSubclassing {
 
     
-    static func plusButton() -> Any! {
+    static func plusButton() -> Any {
         let button = CYLPlusButtonSubclass()
         button.setImage(UIImage(named: "post_normal"), for: .normal)
         button.titleLabel?.textAlignment = .center
@@ -22,8 +22,8 @@ class CYLPlusButtonSubclass: CYLPlusButton,CYLPlusButtonSubclassing {
         button.setTitle("发布", for: .normal)
         button.setTitleColor(UIColor.gray, for: .normal)
         
-        button.setTitle("选中", for: .selected)
-        button.setTitleColor(UIColor(r: 255, g: 102, b: 0), for: .selected)
+        button.setTitle("选中", for: .selected)        
+        button.setTitleColor(UIColor(red:255.0/255.0,green:102.0/255.0,blue:0,alpha:1.0), for: .selected)
         
         button.adjustsImageWhenHighlighted = false
         button.sizeToFit()
@@ -42,11 +42,10 @@ class CYLPlusButtonSubclass: CYLPlusButton,CYLPlusButtonSubclassing {
         return -10
     }
     
-    static func plusChildViewController() -> UIViewController! {
+    static func plusChildViewController() -> UIViewController {
         let vc = PublishViewController()
         let nav = UINavigationController(rootViewController: vc)
         return nav
-        
     }
     
     
