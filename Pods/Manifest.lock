@@ -1,7 +1,7 @@
 PODS:
-  - CYLTabBarController (1.29.0):
-    - CYLTabBarController/Core (= 1.29.0)
-  - CYLTabBarController/Core (1.29.0)
+  - CYLTabBarController (1.29.2):
+    - CYLTabBarController/Core (= 1.29.2)
+  - CYLTabBarController/Core (1.29.2)
 
 DEPENDENCIES:
   - CYLTabBarController (~> 1.29.0)
@@ -11,8 +11,8 @@ SPEC REPOS:
     - CYLTabBarController
 
 SPEC CHECKSUMS:
-  CYLTabBarController: f5460b8446f82d016945d4d53895a1ef185b79e3
+  CYLTabBarController: db44b5901a28693a8a4279e4721b3aafdd36c178
 
 PODFILE CHECKSUM: 435b9bc7cbc4668fd6d376281341c3746a5e149b
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.11.2
